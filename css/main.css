@@ -1,0 +1,38 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+	box-sizing: inherit;
+}
+
+.body {
+	margin: 0 auto;
+	max-width: 1000px;
+	height: 100vh;
+	font-family: "Lato", sans-serif;
+	background-color: #ddd;
+}
+
+.container {
+	margin: 10px 30px;
+	padding-bottom: 20px;
+}
+
+.section {
+	background-color: #fff;
+}
+
+.section__title {
+	padding: 20px;
+	font-weight: 900;
+	border-bottom: 2px solid #ddd;
+}
+
+@media (max-width: 576px) {
+    .section__title {
+        font-size: 20px;
+    }
+}
