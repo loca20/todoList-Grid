@@ -1,11 +1,8 @@
 .form {
-	display: flex;
-	flex-wrap: wrap;
 	padding: 0 20px 20px 20px;
 }
 
 .form__newTask {
-	flex-grow: 1;
 	margin-right: 20px;
 	padding: 10px;
 	border: 1px solid #ddd;
@@ -18,17 +15,3 @@
 	border: none;
 }
 
-@media (max-width: 576px) {
-	.form {
-		flex-direction: column;
-	}
-
-	.form__newTask {
-		margin-right: 0;
-		margin-bottom: 10px;
-	}
-
-	.form__sendTaskButton {
-		flex-grow: 1;
-	}
-}
