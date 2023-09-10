@@ -1,15 +1,54 @@
 .section {
+	margin: 20px 0;
 	background-color: #fff;
 }
 
+.section__area {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+}
+
+@media (max-width: 768px) {
+	.section__area {
+		grid-template-columns: 1fr;
+	}
+}
+
 .section__title {
+	margin: 0;
 	padding: 20px;
 	font-weight: 900;
-	border-bottom: 2px solid #ddd;
 }
 
 @media (max-width: 576px) {
-    .section__title {
-        font-size: 20px;
-    }
+	.section__title {
+		font-size: 20px;
+	}
+}
+
+.section__buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	padding: 20px;
+}
+
+@media (max-width: 768px) {
+	.section__buttons {
+		grid-template-columns: 1fr;
+	}
+}
+
+.section__button {
+	padding: 10px;
+	color: teal;
+	background: none;
+	border: none;
+	cursor: pointer;
+	transition: color .5s;
+}
+
+.section__button:hover {
+	color:  rgb(0, 153, 153);
 }

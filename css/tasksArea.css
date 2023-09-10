@@ -1,5 +1,6 @@
 .tasksArea {
 	min-height: 40px;
+	border-top: 2px solid #ddd;
 }
 
 .tasks {

@@ -17,6 +17,6 @@ html {
 }
 
 .container {
-	margin: 10px 30px;
-	padding-bottom: 20px;
+	margin: 0 auto;
+	padding: 20px;
 }
