@@ -23,10 +23,12 @@
 	background-color: #060;
 	border: none;
 	color: #fff;
+	cursor: pointer;
 }
 
 .task__button--remove {
 	background-color: #d00;
+	cursor: pointer;
 }
 
 .task__buttonIcon {
