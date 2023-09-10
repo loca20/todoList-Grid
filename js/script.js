@@ -1,4 +1,4 @@
-const tasks = [
+let tasks = [
 	{ content: "zjeść obiad", done: true },
 	{ content: "zjeść kolację", done: false },
 ];
@@ -6,9 +6,7 @@ const tasks = [
 let hideDoneTasks = false;
 
 const addNewTask = (newTaskContent) => {
-	tasks.push({
-		content: newTaskContent,
-	});
+	tasks = [...tasks, { content: newTaskContent }];
 	render();
 };
 
