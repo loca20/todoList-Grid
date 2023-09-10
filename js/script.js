@@ -1,4 +1,4 @@
-{
+
 	const tasks = [
 		{ content: "zjeść obiad", done: true },
 		{ content: "zjeść kolację", done: false },
@@ -40,10 +40,10 @@
 	};
 
 	const renderTasks = () => {
-		let htmlString = "";
+		let taskHtmlString = "";
 
 		for (const task of tasks) {
-			htmlString += `
+			taskHtmlString += `
 <li class="task${task.done ? " taskDone" : ""}">
 <button class="task__button js-done">
 <i class="fa-solid fa-check${
@@ -56,7 +56,7 @@
 `;
 		}
 
-		document.querySelector(".js-tasks").innerHTML = htmlString;
+		document.querySelector(".js-tasks").innerHTML = taskHtmlString;
 	};
 
 	const renderButtons = () => {};
@@ -90,4 +90,4 @@
 	};
 
 	init();
-}
+
