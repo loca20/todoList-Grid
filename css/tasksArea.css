@@ -24,11 +24,20 @@
 	border: none;
 	color: #fff;
 	cursor: pointer;
+	transition: background-color 0.5s;
+}
+
+.task__button:hover {
+	background-color: rgb(0, 125, 0);
 }
 
 .task__button--remove {
 	background-color: #d00;
 	cursor: pointer;
+}
+
+.task__button--remove:hover {
+	background-color: rgb(247, 63, 63);
 }
 
 .task__buttonIcon {
