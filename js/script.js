@@ -59,12 +59,22 @@
 		document.querySelector(".js-tasks").innerHTML = taskHtmlString;
 	};
 
-	const renderButtons = () => {};
+	const renderButtons = () => {
+		let buttonHtmlString = "";
+
+		if (tasks.length > 0) {
+			
+		}
+
+	};
+
+	const bindButtonsEvents = () => {};
 
 	const render = () => {
 		renderTasks();
 		renderButtons();
 		bindEvents();
+		bindButtonsEvents();
 	};
 
 	const onFormSubmit = (event) => {
