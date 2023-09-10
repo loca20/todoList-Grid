@@ -39,25 +39,31 @@
 		});
 	};
 
-	const render = () => {
+	const renderTasks = () => {
 		let htmlString = "";
 
 		for (const task of tasks) {
 			htmlString += `
-        <li class="task${task.done ? " taskDone" : ""}">
-		<button class="task__button js-done">
-		<i class="fa-solid fa-check${
-			task.done ? "" : " task__buttonIcon"
-		}"></i></button>
-        <span class="task__content">${task.content}</span>
-        <button class="task__button task__button--remove js-remove">
-		<i class="fa-regular fa-trash-can"></i></button>
-        </li>
-        `;
+<li class="task${task.done ? " taskDone" : ""}">
+<button class="task__button js-done">
+<i class="fa-solid fa-check${
+				task.done ? "" : " task__buttonIcon"
+			}"></i></button>
+<span class="task__content">${task.content}</span>
+<button class="task__button task__button--remove js-remove">
+<i class="fa-regular fa-trash-can"></i></button>
+</li>
+`;
 		}
 
 		document.querySelector(".js-tasks").innerHTML = htmlString;
+	};
 
+	const renderButtons = () => {};
+
+	const render = () => {
+		renderTasks();
+		renderButtons();
 		bindEvents();
 	};
 
