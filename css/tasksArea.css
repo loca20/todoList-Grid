@@ -48,3 +48,7 @@
 .taskDone {
 	text-decoration: line-through;
 }
+
+.tasks__itemHidden {
+	display: none;
+}
