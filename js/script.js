@@ -64,16 +64,15 @@
 
 		for (const task of tasks) {
 			taskHtmlString += `
-<li class="task${task.done && hideDoneTasks ? " tasks__itemHidden" : ""}">
-<button class="task__button js-done">
-<i class="fa-solid fa-check${
-				task.done ? "" : " task__buttonIcon"
-			}"></i></button>
-<span class="task__content${task.done ? " taskDone" : ""}">${task.content}</span>
-<button class="task__button task__button--remove js-remove">
-<i class="fa-regular fa-trash-can"></i></button>
-</li>
-`;
+			<li class="task${task.done && hideDoneTasks ? " tasks__itemHidden" : ""}">
+				<button class="task__button js-done">
+					<i class="fa-solid fa-check${task.done ? "" : " task__buttonIcon"}"></i>
+				</button>
+				<span class="task__content${task.done ? " taskDone" : ""}">${task.content}</span>
+				<button class="task__button task__button--remove js-remove">
+					<i class="fa-regular fa-trash-can"></i>
+				</button>
+			</li>`;
 		}
 
 		document.querySelector(".js-tasks").innerHTML = taskHtmlString;
@@ -84,10 +83,11 @@
 
 		if (tasks.length > 0) {
 			buttonsElement.innerHTML = `
-			<button class="section__button js-toggleHideDoneTasks">${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone</button>
-			<button class="section__button ${
-				tasks.every(({ done }) => done) ? "section__button--disabled" : ""
-			} js-markAllTasksDoneButton">Ukończ wszystkie</button>`;
+			<button class="section__button js-toggleHideDoneTasks">
+			${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone</button>
+			<button class="section__button 
+			${tasks.every(({ done }) => done) ? "section__button--disabled" : ""} 
+			js-markAllTasksDoneButton">Ukończ wszystkie</button>`;
 		}
 	};
 
