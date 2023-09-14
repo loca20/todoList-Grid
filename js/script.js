@@ -1,8 +1,5 @@
 {
-	let tasks = [
-		{ content: "zjeść obiad", done: true },
-		{ content: "zjeść kolację", done: false },
-	];
+	let tasks = [];
 
 	let hideDoneTasks = false;
 
