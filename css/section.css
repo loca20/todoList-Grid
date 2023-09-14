@@ -46,9 +46,18 @@
 	background: none;
 	border: none;
 	cursor: pointer;
-	transition: color .5s;
+	transition: color 0.5s;
 }
 
 .section__button:hover {
-	color:  rgb(0, 153, 153);
+	color: rgb(0, 153, 153);
+}
+
+.section__button--disabled {
+	color: #ccc;
+	cursor: not-allowed;
+}
+
+.section__button--disabled:hover {
+	color: #ccc;
 }
