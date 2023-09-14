@@ -1,6 +1,7 @@
 .section {
 	margin: 20px 0;
 	background-color: #fff;
+	box-shadow: 0 0 7px #ccc;
 }
 
 .section__area {
