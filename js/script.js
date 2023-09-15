@@ -79,16 +79,18 @@
 	};
 
 	const renderButtons = () => {
-		const buttonsElement = document.querySelector(".js-buttons");
+		let buttonsContent = "";
 
 		if (tasks.length > 0) {
-			buttonsElement.innerHTML = `
+			buttonsContent = `
 			<button class="section__button js-toggleHideDoneTasks">
 			${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone</button>
 			<button class="section__button 
 			${tasks.every(({ done }) => done) ? "section__button--disabled" : ""} 
 			js-markAllTasksDoneButton">Ukończ wszystkie</button>`;
 		}
+		const buttonsElement = document.querySelector(".js-buttons");
+		buttonsElement.innerHTML = buttonsContent;
 	};
 
 	const bindButtonsEvents = () => {
