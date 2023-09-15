@@ -38,6 +38,7 @@
 @media (max-width: 768px) {
 	.section__buttons {
 		grid-template-columns: 1fr;
+		padding: 0 0 20px 0;
 	}
 }
 
@@ -52,6 +53,18 @@
 
 .section__button:hover {
 	color: rgb(0, 153, 153);
+}
+
+@media (max-width: 768px) {
+	.section__button {
+		padding: 0;
+	}
+}
+
+@media (max-width: 576px) {
+	.section__button {
+		font-size: 14px;
+	}
 }
 
 .section__button--disabled {
